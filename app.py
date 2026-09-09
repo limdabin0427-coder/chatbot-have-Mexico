@@ -87,7 +87,7 @@ if ENABLE_GOOGLE_SHEETS:
                 sheet.append_row([
                     "시간", "번호", "이름", "학생발화(보정)", "원본발화",
                     f"{CHARACTER_NAME}응답", "단계", "나라", "수업유형",
-                ])
+                ], table_range="A:I")
             print(f"✅ 구글 시트 연결: {SHEET_TAB} / {LESSON_TYPE}")
         else:
             print("⚠️ GOOGLE_SERVICE_ACCOUNT 환경변수 없음")
@@ -258,7 +258,7 @@ def save_log(corrected, original, reply, stage):
             stage,
             COUNTRY,
             LESSON_TYPE,
-        ])
+        ], table_range="A:I")
     except Exception as error:
         print(f"❌ 시트 저장 실패: {error}")
         traceback.print_exc()
