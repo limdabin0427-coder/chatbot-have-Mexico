@@ -1,0 +1,40 @@
+import os
+from enum import Enum
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+TEMPLATES_DIR = BASE_DIR / "templates"
+
+CHARACTERS_FILE = DATA_DIR / "characters.json"
+ITEMS_FILE = DATA_DIR / "items.json"
+
+CHATBOT_ID = "Mexico"
+LESSON_TYPE = "HAVE"
+
+
+class Stage(str, Enum):
+    WAIT_GREETING = "WAIT_GREETING"
+    WAIT_FEELING = "WAIT_FEELING"
+    STUDENT_QUESTION_1 = "STUDENT_QUESTION_1"
+    STUDENT_QUESTION_2 = "STUDENT_QUESTION_2"
+    STUDENT_QUESTION_3 = "STUDENT_QUESTION_3"
+    END = "END"
+
+
+INITIAL_STAGE = Stage.WAIT_GREETING
+MAX_HISTORY_MESSAGES = 24
+
+MODEL_NAME = "gpt-4o-mini"
+TEMPERATURE = 0.3
+MAX_RESPONSE_TOKENS = 80
+OPENAI_API_KEY_ENV = "OPENAI_API_KEY"
+
+ENABLE_GOOGLE_SHEETS = True
+SPREADSHEET_ID = "1AmxwtiicsbwVy8jEbWqK6Ogi2rkitZxDftm8yPm8Ftg"
+GOOGLE_SERVICE_ACCOUNT_ENV = "GOOGLE_SERVICE_ACCOUNT"
+FLASK_SECRET_KEY = os.environ.get(
+    "FLASK_SECRET_KEY",
+    "mexico-have-chatbot-secret-key",
+)
