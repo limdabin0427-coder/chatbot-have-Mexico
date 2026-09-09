@@ -84,7 +84,7 @@
       "provider": "openai",
       "model": "gpt-4o-mini-tts",
       "voice": "verse",
-      "instructions": ""Speak like a cheerful and friendly young boy. Use a light, clear, youthful voice with a slightly higher pitch and a warm smile. Speak at a steady, relaxed pace for Korean third-grade English learners. Sound playful and upbeat, but never rushed, breathless, deep, mature, or formal. Use clear American English. Do not add or change any words.",
+      "instructions": "Speak like a cheerful and friendly young boy. Use a light, clear, youthful voice with a slightly higher pitch and a warm smile. Speak at a steady, relaxed pace for Korean third-grade English learners. Sound playful and upbeat, but never rushed, breathless, deep, mature, or formal. Use clear American English. Do not add or change any words.",
       "gender": "male",
       "child_mode": true,
       "rate": 0.85,
