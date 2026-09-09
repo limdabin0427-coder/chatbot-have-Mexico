@@ -83,8 +83,8 @@
     "tts": {
       "provider": "openai",
       "model": "gpt-4o-mini-tts",
-      "voice": "ash",
-      "instructions": "Speak as a cheerful, friendly, and youthful Mexican boy. Use a light, noticeably higher-pitched tone than a mature male voice, with warm energy and a natural smile. Keep a calm, steady, unhurried pace for Korean third-grade English learners. Sound playful and upbeat, but never rushed, breathless, loud, or overly excited. Use clear American English. Do not add or change any words.",
+      "voice": "verse",
+      "instructions": ""Speak like a cheerful and friendly young boy. Use a light, clear, youthful voice with a slightly higher pitch and a warm smile. Speak at a steady, relaxed pace for Korean third-grade English learners. Sound playful and upbeat, but never rushed, breathless, deep, mature, or formal. Use clear American English. Do not add or change any words.",
       "gender": "male",
       "child_mode": true,
       "rate": 0.85,
