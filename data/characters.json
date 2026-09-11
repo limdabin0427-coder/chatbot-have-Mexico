@@ -15,8 +15,8 @@
     "finale_message": "Come visit Mexico next time!\n다음에는 멕시코에서 만나요!",
     "first_item": "pencil",
     "retry_examples": {
-      "STUDENT_QUESTION_1": "Do you have a pencil?",
-      "STUDENT_QUESTION_2": "Do you have a cup?"
+      "STUDENT_QUESTION_1": "Do you have an eraser?",
+      "STUDENT_QUESTION_2": "Do you have a hat?"
     },
     "inventory": {
       "pencil": "yes",
